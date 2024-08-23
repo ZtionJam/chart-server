@@ -1,0 +1,29 @@
+server:
+  port: 8208
+
+
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:/Users/ztionjam/Documents/Project/chart-server/ChartData.db?date_string_format=yyyy-MM-dd HH:mm:ss
+
+mybatis-flex:
+  global-config:
+    print-banner: false
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+sa-token:
+  token-name: Authorization
+  timeout: 2592000
+  is-concurrent: true
+  is-share: true
+  is-log: true
+
+
+openai:
+  organization: tesst
+  apiKey: xxxxx
+  use-proxy: false
+  host: 127.0.0.1
+  port: 7890
